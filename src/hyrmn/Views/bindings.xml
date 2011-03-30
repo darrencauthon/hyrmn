@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<bindings>
+
+  <element name="Form">
+    <start>#using (Html.BeginForm("@action", "@controller", new RouteValueDictionary{{"@route-*"}}, FormMethod.@method, new Dictionary[[string,object]]{{"@*"}})) {</start>
+    <end>#}</end>
+  </element>
+  <element name="Form">
+    <start>#using (Html.BeginForm("@action", this.ControllerName(), new RouteValueDictionary{{"@route-*"}}, FormMethod.@method, new Dictionary[[string,object]]{{"@*"}})) {</start>
+    <end>#}</end>
+  </element>
+
+  <element name="ValidationForm">
+    <start>#Html.EnableClientValidation(); Html.EnableUnobtrusiveJavaScript(); using (Html.BeginForm("@action", "@controller", new RouteValueDictionary{{"@route-*"}}, FormMethod.@method, new Dictionary[[string,object]]{{"@*"}})) {</start>
+    <end>#}</end>
+  </element>
+  <element name="ValidationForm">
+    <start>#Html.EnableClientValidation(); Html.EnableUnobtrusiveJavaScript(); using (Html.BeginForm("@action", this.ControllerName(), new RouteValueDictionary{{"@route-*"}}, FormMethod.@method, new Dictionary[[string,object]]{{"@*"}})) {</start>
+    <end>#}</end>
+  </element>
+  <element name="a">Html.ActionLink('child::*', '@action', '@controller', new RouteValueDictionary{{'@route-*'}}, new Dictionary[[string,object]]{{"@*"}})</element>
+  <element name="a">Html.ActionLink('child::*', '@action', new RouteValueDictionary{{'@route-*'}}, new Dictionary[[string,object]]{{"@*"}})</element>
+  <element name="a">Html.ActionLink('child::*', '@action', '@controller', new Dictionary[[string,object]]{{'@*'}})</element>
+  <element name="a">Html.ActionLink('child::*', '@action', '@controller')</element>
+  <element name="a">Html.ActionLink('child::*', '@action')</element>
+
+  <element name="Hidden">Html.HiddenFor(m => m.@for)</element>
+  <element name="Label">Html.LabelFor(m => m.@for)</element>
+  <element name="Checkbox">Html.CheckBoxFor(m => m.@for, new Dictionary[[string,object]]{{'@*'}})</element>
+  <element name="Checkbox">Html.CheckBoxFor(m => m.@for)</element>
+
+  <element name="Editor">Html.EditorFor(m => m.@for, new Dictionary[[string,object]]{{'@*'}})</element>
+  <element name="TextArea">Html.TextAreaFor(m => m.@for, new Dictionary[[string,object]]{{'@*'}})</element>
+  <element name="Textbox">Html.TextBoxFor(m => m.@for, new Dictionary[[string,object]]{{'@*'}})</element>
+  <element name="ValidationMessage">Html.ValidationMessageFor(x => x.@for)</element>
+
+  <element name="Hidden">Html.Hidden('@name', '@value')</element>
+  <element name="Textbox">Html.TextBox('@name', @value, new Dictionary[[string,object]]{{'@*'}})</element>
+  <element name="ValidationMessage">Html.ValidationMessage('@name', new Dictionary[[string,object]]{{'@*'}})</element>
+
+  <element name="DropDownList">Html.DropDownListFor(m => m.@for, new SelectList(@list, '@value', '@text', @selected))</element>
+  <element name="DropDownList">Html.DropDownListFor(m => m.@for, new SelectList(@list, '@value', '@text'))</element>
+  <element name="DropDownList">Html.DropDownListFor(m => m.@for, new SelectList(@list))</element>
+  <element name="DropDownList">Html.DropDownList('@name', @list)</element>
+
+</bindings>

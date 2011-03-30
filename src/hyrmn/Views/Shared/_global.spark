@@ -1,0 +1,10 @@
+﻿<use namespace="System"  />
+<use namespace="System.Linq"  />
+<use namespace="System.Web"  />
+<use namespace="System.Collections.Generic"  />
+<use namespace="System.Web.Mvc"/>
+<use namespace="System.Web.Mvc.Html"/>
+<use namespace="System.Web.Mvc.Ajax"/>
+<use namespace="System.Web.Routing"/>
+
+<global type="string" Title="'You forgot the page title, idiot'"/>

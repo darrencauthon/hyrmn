@@ -1,0 +1,79 @@
+*{margin:0;padding:0;outline:0}
+body{margin:0;padding:0;text-align:center;background-color:#e3e3e3;font-family:Lucida Sans Unicode,arial,helvetica,sans-serif;word-spacing:3px;line-height:20px;font-size:12px;color:#616150}
+.layoutDiv{margin-left:auto;margin-right:auto;text-align:left;width:950px}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{display:inline-block}
+/*\*/* html .clearfix{height:1%}
+.clearfix{display:block}
+/**/#BGheaderContainer{margin-left:auto;margin-right:auto;background:url(images/BGheaderShad.png) no-repeat center;height:255px}
+#headLogo{position:relative;float:left;left:36px;top:42px}
+#headArt{float:right}
+#headerContainer{background:url(images/BGheaderContainer.gif) repeat-x;height:255px}
+#header{background:url(images/BGheader.png) no-repeat;position:relative;height:190px;top:65px}
+#menuContainer{clear:both;position:absolute;top:152px;background-color:#c0d22c;height:38px}
+#menubar ul{width:520px;list-style:none;padding:0;margin:7px;float:left}
+#menubar ul li{display:inline;width:120px;height:24px;float:left;margin:0 1px 0 0;font:bold 14px Arial,Helvetica,san-serif}
+#menubar ul li a{display:block;width:120px;height:21px;text-decoration:none;background:#a4b32c;color:#dbe876;text-align:center;padding-top:3px}
+#menubar ul li a:hover{background:#dbe876;color:#fff}
+#menubar ul li a.first{background:url(images/BGmenucapL.gif) no-repeat left #a4b32c}
+#menubar ul li a.first:hover{background:url(images/BGmenucapLon.gif) no-repeat left #dbe876}
+#menubar ul li a.last{background:url(images/BGmenucapR.gif) no-repeat right #a4b32c}
+#menubar ul li a.last:hover{background:url(images/BGmenucapRon.gif) no-repeat right #dbe876}
+#headerLinks{font-size:11px;margin:8px 6px 0 0}
+#headerLinks ul{float:right;list-style-type:none;white-space:nowrap;margin:0;width:300px}
+#headerLinks ul li{display:inline;float:right;font-size:11px;white-space:nowrap;border-left:1px solid #6f6f5c}
+#headerLinks ul li a{display:block;color:#6f6f5c;text-decoration:none;padding:0 10px 2px 10px}
+#headerLinks ul li a:hover{background-color:#f5ff9b}
+#contentContainer{background:url(images/BGcontents.gif) center repeat-y}
+#contentWrapper{background-color:#fff}
+#content{float:left;width:675px;padding:0 25px 20px 30px;margin:20px 0 0 0;line-height:1.6em;font-size:1.5em}
+#content p{margin:0 0 20px 0}
+#content h1{color:#d94d00;font-size:1.2em;padding:0 0 3px 0;border-bottom:1px solid #8d8d6e;margin:0 0 20px 0}
+#content h1 a{color:#d94d00;padding:0 0 3px 0;text-decoration:none;margin:0 0 20px 0}
+#content h2{font-size:1.1em;padding:0}
+#content form input,textarea,button{font-size:1.4em}
+#content form input[type="text"],textarea{width:350px}
+#content form textarea{height:200px}
+#content form fieldset{padding:0 1em;border:dashed 1px #c0c0c0}
+#postcontent{width:875px;padding:0 25px 20px 30px;margin:0;line-height:1.6em;font-size:1.5em}
+#postcontent #summary{font-size:.8em;font-style:italic;color:#505050;padding:1em 2em 1em 2em}
+#postcontent p{margin:0 0 20px 0}
+#postcontent h1{color:#d94d00;font-size:1.2em;padding:1em 0 3px 0;border-bottom:1px solid #8d8d6e;margin:0}
+#postcontent h2{font-size:1.1em;padding:0}
+#sidebar{float:left;width:170px;padding:0 15px 20px 25px;margin:20px 0 0 0;border-left:1px dotted #999;font-size:11px;word-spacing:0;line-height:18px;color:#a5a592}
+#sidebar p{margin:0 0 18px 0}
+#sidebar h3{color:#d94d00;font-size:16px;padding:0 0 3px 0;border-bottom:1px solid #ebede1}
+#sidebar ul{list-style:none;padding:0 0 15px 0}
+#sidebar ul li{border-bottom:1px solid #ebede1}
+#sidebar ul li a{display:block;text-decoration:none;color:#a5a592;padding:1px 1px 1px 12px;background:url(images/carrot.gif) left no-repeat}
+#sidebar ul li a:hover{display:block;text-decoration:none;background:url(images/carrot.gif) left no-repeat #f5ff9b}
+#footerContainer{clear:both;background:url(images/BGfooterContainer.gif) repeat-x top #2c2c25;padding-bottom:72px}
+#artLeft{background:url(images/BGfooterContainerArtLeft.jpg) left top no-repeat}
+#artRight{background:url(images/BGfooterContainerArtRight.jpg) right top no-repeat}
+#footerWrapper{clear:both;background:url(images/BGfooterWrapper.gif) repeat-x top #c0d22c}
+#artBottom{background:url(images/BGfooterWrapperArt3.gif) bottom no-repeat}
+#sitemap{color:#585848;padding:20px 0 40px 0;width:840px;margin:0 auto;min-height:255px}
+#sitemap h3{font-size:80%;margin:0;padding:.5em 0 .1em 0;text-transform:uppercase;color:#d94d00}
+#sitemap ul{list-style:none;padding:0;border-top:1px solid #b1c12c}
+#sitemap ul li{border-bottom:1px solid #b1c12c}
+#sitemap a{color:#585848}
+#sitemap a:hover{background-color:#f5ff9b}
+#sitemap ul li a{display:block;text-decoration:none;color:#585848;padding:1px 1px 1px 8px}
+#sitemap ul li a:hover{background-color:#f5ff9b}
+#sitemap .col3,.col3-center{float:left;width:32%}
+#sitemap .col3-center{margin:0 15px 0 15px}
+#footer{color:#2c2c25;padding-bottom:22px;width:400px;margin-left:350px;font-size:12px;line-height:1em}
+#footer a{color:#2c2c25}
+#footer ul{margin-left:.7em;display:inline;list-style-type:none}
+#footer li{border-left:1px solid #e9f581;padding:0 0 0 .7em;margin:0 .5em 0 0;display:inline;list-style-type:none}
+#footer li.first{border:0;padding-left:0}
+a{color:#2e6eff}
+a:hover{background-color:#f5ff9b;text-decoration:none}
+a.newWindow{padding-right:20px;background:url(images/iNewWindow.gif) no-repeat right;display:inline-block}
+a:hover.newWindow{padding-right:20px;background:url(images/iNewWindow2.gif) no-repeat right #f5ff9b;display:inline-block}
+a.pdf{padding-right:18px;background:url(images/iPDF.gif) no-repeat right bottom;display:inline-block}
+a:hover.pdf{padding-right:18px;background:url(images/iPDF2.gif) no-repeat right bottom;display:inline-block}
+a.email{padding-right:22px;background:url(images/iEmail.gif) no-repeat right bottom;display:inline-block}
+a:hover.email{padding-right:22px;background:url(images/iEmail2.gif) no-repeat right bottom;display:inline-block}
+#disqus_thread{width:875px;padding:0 25px 20px 30px;margin:20px 0 0 0}
+.bookreview h3{font-size:.9em;color:#d94d00;font-weight:normal}

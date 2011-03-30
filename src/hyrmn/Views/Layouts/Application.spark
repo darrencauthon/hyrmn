@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<title>${H(Title)}</title>
+    <link href="~/css/site.min.css" rel="stylesheet" type="text/css" />
+    <use content="head"/>
+</head>
+<body>
+    <div id="headerContainer">
+        <div id="BGheaderContainer">
+            <div id="header" class="layoutDiv">
+                <div id="headLogo">
+                    <img src="~/css/images/headLogo.gif" alt="" /></div>
+                <div id="headArt">
+                    <img src="~/css/images/headArt.gif" alt="" /></div>
+                <div id="menuContainer" class="layoutDiv">
+                    <div id="menubar">
+                        <ul>
+                            <li><a class="first" href="/">Blog</a></li>
+                            <li><a class="last" href="/contact">Contact Me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contentContainer">
+        <div id="contentWrapper" class="layoutDiv clearfix">
+            <div id="content">
+				<use content="view"/>
+			</div>
+        </div>
+    </div>
+    <div id="footerContainer">
+        <div id="artLeft">
+            <div id="artRight">
+                <div id="footerWrapper" class="layoutDiv">
+                    <div id="artBottom">
+                        <div id="sitemap" class="clearfix">
+                            <div class="col3">
+                                <h3>About Me</h3>
+                                <p>My name is Ben Hyrman. I write code. Sometimes I actually do a decent job at it. This blog is to capture whatever vapid and inane thoughts I feel like spewing on to the interwebs for posterity.</p>
+                                <br />
+                                <p>I've been married for over 9 years now to the most amazing woman on this planet. We, being mentally incapacitated in some fashion (her case is more evident as she willingly married me!) live in Michigan with our dog, Bandit.</p>
+                            </div>
+                            <div class="col3-center">
+                                <h3>About the Blog</h3>
+                                <p>I quickly wrote this blog thingy just to get some sort of online journal going. I'll add, rearrange, and maybe delete, stuff on it at some point. Writing your own blog is sort of the hello world app for developers these days so, why not...</p>
+                            </div>
+                            <div class="col3">
+                                <h3>And this awesome layout</h3>
+                                <p>The graphics and layout for this site were entirely created by Mike Evans. Check out his <a href="http://www.minibossmike.com/">portfolio</a> or write him at <a href="mailto:mrmikeevans@hotmail.com">mrmikeevans@hotmail.com</a>.</p>
+                                <br />
+                                <p>I've had the distinct pleasure to work with Mike as both a co-worker and as a client. He's creative, laid-back, and simply an outstanding guy to work with.</p>
+                            </div>
+                        </div>
+                        <div id="footer">
+                            Copyright &copy; <%=DateTime.Now.Year %> Ben Hyrman. Some Rights Reserved.<br /><br /> 
+                            You may reuse or otherwise repurpose the content as outlined in the <a href="http://creativecommons.org/licenses/by-sa/3.0/us/">Creative Commons Attribution-Share Alike 3.0 License</a>.<br />
+							The code for this site is available on <a href="https://github.com/hyrmn/hyrmn-blog">GitHub</a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <asp:ContentPlaceHolder ID="ScriptContent" runat="server"/>
+    
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-1608107-10']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>    
+</body>
+</html>

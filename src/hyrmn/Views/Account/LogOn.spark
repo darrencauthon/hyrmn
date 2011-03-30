@@ -1,0 +1,4 @@
+﻿<ValidationForm action="OpenIdLogin" controller="Account" method="Post">
+  <Hidden name="openidIdentifier" value="https://www.google.com/accounts/o8/id" />
+  <button>Log in</button>
+</ValidationForm>
